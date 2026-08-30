@@ -70,6 +70,7 @@ p {
   font-size: clamp(1rem, 2vw, 1.1rem);
 }
 
+
 /* =========================
    IMAGES
 ========================= */
@@ -447,7 +448,7 @@ margin-top: 40px;
 .projects-title {
   font-size: clamp(1rem, 5vw, 2rem);
   margin-bottom: 2rem;
-color:#4c2c88
+color:#4c2c88;
 }
 
 .projects-grid {
@@ -488,7 +489,28 @@ color:#4c2c88
   padding: 1.2rem 1.2rem 0.5rem;
   font-size: 1.3rem;
 }
-
+.featured-project {
+  transform: scale(1.02);
+  border: 2px solid var(--primary) ;
+  box-shadow: 2px 8px 25px rgba(0, 2, 0, 0.12);
+}
+.featured-project {
+  grid-column: span 2;
+}
+.featured-project .web {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color:#4c2c88 ;
+}
+.featured-project img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: top;
+}
+.featured-project:hover {
+  transform: scale(1.02) translateY(-8px);
+}
 .project-card p {
   padding: 0 1.2rem;
   color: var(--muted);
